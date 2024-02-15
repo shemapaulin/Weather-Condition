@@ -1,0 +1,45 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pt-custom {
+    padding-top: var(--custom-padding);
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .animated-slideInLeft {
+    animation: slideInLeft 4s ease-in-out;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .animated-slideInRight {
+    animation: slideInRight 0.5s ease-in-out;
+  }
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .animated-slideInTop {
+    animation: slideInTop 0.5s ease-out;
+  }
